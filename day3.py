@@ -1,3 +1,5 @@
+# for循环列表生成/处理
+
 class Car:
     def action(self):
         pass
