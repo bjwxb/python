@@ -1,6 +1,17 @@
 import logging
 logging.basicConfig(level=logging.INFO)
 # 异常处理 try...except...finally...
+# Exception - 常规错误基类
+# ArithmeticError - 所有数值计算错误的基类
+# FloatingPointError - 浮点数计算错误
+# OverflowError - 数值运算超出最大限制
+# ZeroDivisionError - 除0
+# AttributeError - 对象没有这个属性
+# NameError - 未声明初始化对象/属性
+# NotImplementedError - 尚未实现的方法
+# TypeError - 对类型无效的操作
+# ValueError - 传入无效的参数
+#
 # debug:
 # 1. print 用print()最大的坏处是将来还得删掉它,
 # 2. assert 凡是用print()来辅助查看的地方，都可以用断言（assert）来替代
