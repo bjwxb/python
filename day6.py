@@ -44,6 +44,7 @@ import re
 5. group()???
 """
 
+
 def testMatch():
     s = "www.baidu.com"
     print(re.match('www', s))  # 匹配成功，返回re.Match对象
@@ -65,7 +66,7 @@ def testSearch():
 
 
 def testSub():
-    phone = "2004-959-559 # 这是一个国外电话号码"
+    phone = "2004-959-55 9 # 这是一个国外电话号码"
 
     # 删除字符串中的 Python注释
     # num = re.sub(r'#.*$', "", phone)  # 1.直接re.sub 匹配
