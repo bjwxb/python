@@ -1,8 +1,11 @@
 # 1. 打印出[100,200]之间满足如下条件的数字：1. 可以被7整除；2, 不能被5整除
 def test():
-    for i in range(100, 200):  # rang 包含100 不包含200
+    for i in range(1, 101):  # rang 包含100 不包含200
         if i % 5 != 0 and i % 7 == 0:
             print(i)
+    for i in range(0, 101, 7):
+        if i % 5 != 0 and i % 7 == 0:
+            print(f'>>>> {i}')
 
 
 # 2.1 求阶乘 factorial
@@ -48,7 +51,7 @@ def covert():
 
 
 if __name__ == '__main__':
-    # test()
+    test()
     # print(fact2(5))
     # print(fact(5))
     # print(fibonacci(3))
@@ -68,3 +71,6 @@ if __name__ == '__main__':
     # print("你好".encode('utf-8'))  # utf-8
     # print(b'\xe4\xbd\xa0\xe5\xa5\xbd'.decode('utf-8'))
     print(f"Hello %s World! {x}" % "java")
+    print(type(0xee))  # 十六进制
+    print(type(0o70))  # 八进制
+    print(type(0b01))  # 二进制

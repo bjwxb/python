@@ -80,3 +80,6 @@ if __name__ == '__main__':
     else:
         print('========== false =====')
 
+    print(type('xyz'))  # 一个字符占若干个字节 string 通过encode转换为bytes
+    print(type(b'xyz'))  # 一个字符占一个字节
+
